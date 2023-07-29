@@ -25,7 +25,7 @@ module Jekyll
         # --
         def call
           before_hook(asset, env: environment)
-          after_hook(out = super, asset: asset, env: environment)
+          after_hook(super, asset: asset, env: environment)
 
           out
         end
